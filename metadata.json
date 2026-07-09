@@ -1,0 +1,6 @@
+{
+  "name": "OpsStream AI",
+  "description": "Dark-mode, high-energy operations dashboard for stadium crowd load-balancing with real-time telemetry and Gemini AI intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
