@@ -43,6 +43,10 @@ When a specific gate experiences an architectural traffic bottleneck, the core s
 * **Node.js** (v18 or higher recommended)
 * A valid **Gemini API Key** from Google AI Studio
 
+## Validation & Testing
+The repository includes a automated unit testing suite to validate telemetry thresholds and load-balancing algorithms.
+* To execute the tests locally, run: `npm run test`
+
 ### Local Development Instructions
 1. **Clone the repository:**
    Ensure you keep all project architecture in a single branch during initialization.
