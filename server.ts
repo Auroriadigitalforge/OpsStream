@@ -7,7 +7,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const HOST = process.env.HOST || '127.0.0.1';
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -113,8 +114,8 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`OpsStream AI server running on http://0.0.0.0:${PORT}`);
+  app.listen(Number(PORT), HOST, () => {
+    console.log(`OpsStream AI secure server running on http://${HOST}:${PORT}`);
   });
 }
 
